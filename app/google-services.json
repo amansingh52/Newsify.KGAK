@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "960897316811",
+    "project_id": "newsy-af510",
+    "storage_bucket": "newsy-af510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960897316811:android:6a1e09c3111deee1b4684e",
+        "android_client_info": {
+          "package_name": "com.maverick.newsify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960897316811-ctd8067i693q9qmm5lgus0jmi4g5phm6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maverick.newsify",
+            "certificate_hash": "93b5cacf441cb2657560d9fae30e40e633ccd813"
+          }
+        },
+        {
+          "client_id": "960897316811-2o40dpdvhlifir713oi7urtaae2df06r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZe3a6qdIdRI19aCndWthTJoDHmb2hsfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960897316811-2o40dpdvhlifir713oi7urtaae2df06r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
