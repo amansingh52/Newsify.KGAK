@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SignUp3rdClass"
     android:id="@+id/signup_3rd_screen_scroll_view"
-    android:background="@color/yellow"
+    android:background="@color/m_yellow"
     android:padding="30dp">
 
     <LinearLayout
