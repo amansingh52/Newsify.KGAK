@@ -7,7 +7,6 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/idToolbar"
         android:layout_width="match_parent"
@@ -33,22 +32,22 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/idRVCategories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/idToolbar"
-        android:layout_marginTop="25dp"
-        android:orientation="horizontal"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/categories_rv_item" />
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/idRVCategories"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/idToolbar"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--        tools:listitem="@layout/categories_rv_item" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNews"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/idRVCategories"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="10dp"
         android:background="@color/m_yellow"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
