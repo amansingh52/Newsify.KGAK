@@ -66,42 +66,52 @@
             android:layout_marginTop="5dp"
             android:background="@color/white">
 
-            //feature location<LinearLayout
-            android:id="@+id/featured_background"
-            android:layout_width="170dp"
-            android:layout_height="280dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@color/gradient_white"
-            android:orientation="vertical">
+            //feature location
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="50dp"
-                android:text="Feature Location"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+            <LinearLayout
+                android:id="@+id/featured_background"
+                android:layout_width="170dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gradient_white"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:textSize="10sp"
-                android:text="Get all the categories here " />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Feature Location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-            //feature location end </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Get all the categories here "
+                    android:textSize="10sp" />
+
+                //feature location end
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CardRecyclerview"
                 android:layout_width="match_parent"
-                android:layout_height="280dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:layout_toRightOf="@id/featured_background"
-                android:orientation="horizontal"/>
-            //upper box end </RelativeLayout>
+                android:orientation="horizontal"
+                android:padding="5dp"
+                tools:listitem="@layout/activity_category_cards" />
+
+
+         //upper box end </RelativeLayout>
 
 
             //lower box <RelativeLayout
@@ -142,7 +152,8 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                android:layout_height="100dp" />
+                android:layout_height="100dp"
+                />
             //lower box inner end</LinearLayout>
             //center box end</RelativeLayout>
 

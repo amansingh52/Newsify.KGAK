@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Newsify"
         tools:replace="android:label">
+<!--        <activity-->
+<!--            android:name=".CategoryCards"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Home"
             android:exported="false" />
@@ -27,7 +30,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".NewDetailActivity" />
         <activity
-            android:name=".UserDashboard"
+            android:name=".StartupScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
