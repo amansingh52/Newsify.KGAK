@@ -19,7 +19,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/signup_back_button"
             android:padding="5dp"
-
             android:transitionName="transition_back_arrow_btn"/>
 
         <TextView
