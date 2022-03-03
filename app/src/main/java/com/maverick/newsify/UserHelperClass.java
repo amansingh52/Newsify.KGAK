@@ -1,10 +1,12 @@
 package com.maverick.newsify;
 
 public class UserHelperClass {
-     String fullName,email,username,password,date,gender,phoneNo;
-     public  UserHelperClass(){}
+    String fullName, email, username, password, date, gender, phoneNo;
 
-        public UserHelperClass(String fullName, String email, String username, String password, String date, String gender, String phoneNo) {
+    public UserHelperClass() {
+    }
+
+    public UserHelperClass(String fullName, String email, String username, String password, String date, String gender, String phoneNo) {
         this.fullName = fullName;
         this.email = email;
         this.username = username;

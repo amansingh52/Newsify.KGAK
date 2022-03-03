@@ -6,7 +6,9 @@
         <entry key="..\:/Newsify.KG/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1465" />
         <entry key="..\:/Newsify.KG/app/src/main/res/drawable/ic_home.xml" value="0.167" />
         <entry key="..\:/Newsify.KG/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1465" />
+        <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_analytics.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_category_cards.xml" value="0.2859375" />
+        <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_fancy1.xml" value="0.264" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_forget_password.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_forgot_password.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_google_sign_in.xml" value="0.2859375" />
@@ -21,8 +23,9 @@
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_sign_up2nd_class.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_sign_up3rd_class.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_startup_screen.xml" value="0.2859375" />
-        <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_user_dashboard.xml" value="0.264" />
+        <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_user_dashboard.xml" value="0.4" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_verify_otp.xml" value="0.2859375" />
+        <entry key="..\:/Newsify.KG/app/src/main/res/layout/activity_web_view.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/app_bar_menu.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/categories_rv_item.xml" value="0.2859375" />
         <entry key="..\:/Newsify.KG/app/src/main/res/layout/category_cards.xml" value="0.2859375" />

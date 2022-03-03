@@ -17,33 +17,34 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/logo" />
+            android:src="@drawable/ic_circle"
+            />
 
         <TextView
-            android:layout_width="305dp"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="100dp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Newsify"
+            android:text="News \nat your fingertips"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="36sp" />
+            android:textSize="34sp" />
         <TextView
-            android:layout_width="305dp"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:textSize="15sp"
             android:fontFamily="@font/poppins_semibold"
-            android:text="News at your fingertips"
+            android:text="Worth to Read, what matters to you, Definitely Matter us"
             android:textAlignment="center"
             android:textColor="@color/black"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp">
+            android:layout_marginTop="20dp">
 
             <Button
                 android:id="@+id/login_btn"
@@ -52,10 +53,13 @@
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
                 android:onClick="Login"
+                android:backgroundTint="@color/m_yellow"
                 android:transitionName="transition_login"
-                android:text="Login">
+                android:text="Login"
+                android:textColor="@color/black">
 
             </Button>
+
 
             <Button
                 android:id="@+id/signup_btn"
@@ -64,11 +68,24 @@
                 android:layout_marginLeft="10dp"
                 android:transitionName="transition_signup"
                 android:layout_weight="1"
+                android:backgroundTint="@color/m_yellow"
+                android:textColor="@color/black"
                 android:onClick="SignUp"
                 android:text="Sign Up">
 
             </Button>
+
         </LinearLayout>
+<!--        <Button-->
+<!--            android:paddingTop="80dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="How we work?"-->
+<!--            android:onClick="How we work?"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:background="#00000000"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_gravity="center"/>-->
 
     </LinearLayout>
 </ScrollView>

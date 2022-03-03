@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fancy1"
+    android:background="@color/gradient_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:src="@drawable/back" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:padding="15dp"
+                android:text="Back  "
+                android:textColor="@color/gradient_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Categories"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="10dp"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_yellow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Technology"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/login_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:backgroundTint="@color/m_yellow"
+                    android:padding="15dp"
+                    android:onClick="OpenAna"
+                    android:text="Login"
+                    android:textColor="@color/white"
+                    android:transitionName="transition_login" />
+                />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="-7dp"
+                android:src="@drawable/ic_technology" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_voilet">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_health" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Sports"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_sports" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_oragnge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/ic_business" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_yellow">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Technology"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+
+                android:layout_marginRight="-7dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_technology"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_voilet">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_health" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Sports"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+
+
+                    android:padding="15dp"
+                    android:text="Expand all" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_sports" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/m_oragnge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Business"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="15dp"
+                    android:text="Expand all" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/ic_business" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>
+

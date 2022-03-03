@@ -37,8 +37,7 @@ public class SignUp2ndClass extends AppCompatActivity {
 
 
         //Hooks
-        backBtn = findViewById(R.id.signup_back_button);
-        next = findViewById(R.id.signup_next_button);
+        backBtn = findViewById(R.id.signup_back_button);next = findViewById(R.id.signup_next_button);
         login = findViewById(R.id.signup_login_button);
         titleText = findViewById(R.id.signup_title_text);
 

@@ -108,7 +108,7 @@
                 android:layout_toRightOf="@id/featured_background"
                 android:orientation="horizontal"
                 android:padding="5dp"
-                tools:listitem="@layout/activity_category_cards" />
+                tools:listitem="@layout/categories_rv_item" />
 
 
          //upper box end </RelativeLayout>
@@ -164,6 +164,12 @@
         </LinearLayout>
 
     </ScrollView>
+    <ProgressBar
+        android:id="@+id/idPBLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
 
 
