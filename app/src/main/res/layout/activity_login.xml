@@ -57,7 +57,6 @@
                     android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/white"
                     android:inputType="text">
-
                 </com.google.android.material.textfield.TextInputEditText>
 
             </com.google.android.material.textfield.TextInputLayout>

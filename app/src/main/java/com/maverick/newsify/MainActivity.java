@@ -21,6 +21,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity implements CategoryRVAdapter.CategoryClickInterface{
 
     //cb0ecff5821d4ca2a2e4e09490f0ac50
+   // 8006f1e5052a42059e2e376412cda54f
 
     private RecyclerView newsRV, categoryRV;
     private ProgressBar loadingPB;
@@ -64,8 +65,8 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
     private void getNews(String category){
         loadingPB.setVisibility(View.VISIBLE);
         articlesArrayList.clear();
-        String categoryUrl = "https://newsapi.org/v2/top-headlines?country=in&category="+ category +"&apiKey=cb0ecff5821d4ca2a2e4e09490f0ac50";
-        String url = "https://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sortBy=publishedAt&language=en&apiKey=cb0ecff5821d4ca2a2e4e09490f0ac50";
+        String categoryUrl = "https://newsapi.org/v2/top-headlines?country=in&category="+ category +"&apiKey=8006f1e5052a42059e2e376412cda54f";
+        String url = "https://newsapi.org/v2/top-headlines?country=in&excludeDomains=stackoverflow.com&sortBy=publishedAt&language=en&apiKey=8006f1e5052a42059e2e376412cda54f";
         String BASE_URL = "https://newsapi.org/";
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)

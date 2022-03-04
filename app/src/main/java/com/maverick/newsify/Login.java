@@ -10,6 +10,8 @@ import android.util.Pair;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.google.android.material.textfield.TextInputLayout;
+
 public class Login extends AppCompatActivity {
 
     @Override
@@ -47,6 +49,23 @@ public class Login extends AppCompatActivity {
         }
         else {
             startActivity(intent);
+        }
+    }
+    private boolean validateUserName() {
+        TextInputLayout username = null;
+        String val = username.getEditText().getText().toString().trim();
+        String checkspaces = "Aw{1,20}z";
+
+        if (val.isEmpty()) {
+            username.setError("Field can not be empty");
+            return false;
+        } else if (val.length() > 20) {
+            username.setError("Username is too large!");
+            return false;
+        } else {
+            username.setError(null);
+            username.setErrorEnabled(false);
+            return true;
         }
     }
 

@@ -15,13 +15,13 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="1dp">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:src="@drawable/back" />
 
             <Button
@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="Categories"
+            android:text="Reports"
             android:textColor="@color/black"
             android:fontFamily="@font/poppins_semibold"
             android:padding="10dp"
@@ -50,19 +50,19 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="170dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_yellow">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:fontFamily="@font/montserrat_subrayada_bold"
                     android:padding="15dp"
-                    android:text="Technology"
+                    android:text="Data Analytics"
                     android:textColor="@color/black"
                     android:textSize="15sp" />
 
@@ -75,9 +75,9 @@
                     android:layout_weight="1"
                     android:background="#00000000"
                     android:backgroundTint="@color/m_yellow"
+                    android:onClick="OpenRepoNews"
                     android:padding="15dp"
-                    android:onClick="OpenAna"
-                    android:text="Login"
+                    android:text="View"
                     android:textColor="@color/white"
                     android:transitionName="transition_login" />
                 />
@@ -96,36 +96,43 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="140dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_voilet">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:fontFamily="@font/montserrat_subrayada_bold"
                     android:padding="15dp"
-                    android:text="Health"
+                    android:text="API Request usage"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/Reportnews_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
                     android:background="#00000000"
+                    android:backgroundTint="@color/m_yellow"
+                    android:onClick="OpenAna"
                     android:padding="15dp"
-                    android:text="Expand all"
-                    android:textColor="@color/black" />
+                    android:text="View"
+                    android:textColor="@color/white"
+                    android:transitionName="transition_login" />
+                />
 
             </RelativeLayout>
 
@@ -144,10 +151,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_blue">
 
                 <TextView
@@ -185,10 +192,10 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_oragnge">
 
                 <TextView

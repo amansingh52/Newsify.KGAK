@@ -12,7 +12,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-public class Analytics extends AppCompatActivity {
+public class ReportNews extends AppCompatActivity {
 
     WebView webView;
     ProgressBar loader;
@@ -20,7 +20,7 @@ public class Analytics extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_analytics);
+        setContentView(R.layout.activity_report_news);
 
         webView = findViewById(R.id.webView);
 
@@ -35,8 +35,7 @@ public class Analytics extends AppCompatActivity {
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://analytics.google.com/analytics/web/?_ga=2.74191957.691391321.1646071832-1928928068.1646071832#/p304367477/realtime/overview?params=_u..nav%3Dmaui%26_u..comparisons%3D%5B%7B%22name%22:%22All%20Users%22,%22filters%22:%5B%7B%22isCaseSensitive%22:true,%22expression%22:%220%22,%22fieldName%22:%22audience%22%7D%5D%7D,%7B%22name%22:%22City%20includes%20Kharabwadi%22,%22filters%22:%5B%7B%22expression%22:%22Kharabwadi%22,%22fieldName%22:%22city%22%7D%5D%7D%5D");
-
+        webView.loadUrl("https://newsapi.org");
         if (webView.isShown()){
             loader.setVisibility(View.INVISIBLE);
         }
