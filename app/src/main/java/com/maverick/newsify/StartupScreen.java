@@ -20,12 +20,10 @@ public class StartupScreen extends AppCompatActivity {
     }
 
     public void Login(View view){
-        Intent intent = new Intent(getApplicationContext(),Login.class);
+        Intent intent = new Intent(getApplicationContext(),Fancy1.class);
 
         Pair[] pairs = new Pair[1];
-
         pairs[0] = new Pair<View, String>(findViewById(R.id.login_btn),"transition_login");
-
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(StartupScreen.this, pairs);
             startActivity(intent, options.toBundle());

@@ -32,7 +32,7 @@ public class Fancy1 extends AppCompatActivity {
 
         Pair[] pairs = new Pair[1];
 
-        pairs[0] = new Pair<View, String>(findViewById(R.id.login_btn),"transition_login");
+        pairs[0] = new Pair<View, String>(findViewById(R.id.OpenAna_btn),"transition_login");
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Fancy1.this, pairs);
@@ -48,7 +48,22 @@ public class Fancy1 extends AppCompatActivity {
 
         Pair[] pairs = new Pair[1];
 
-        pairs[0] = new Pair<View, String>(findViewById(R.id.login_btn),"transition_login");
+        pairs[0] = new Pair<View, String>(findViewById(R.id.RepoNews_btn),"transition_login");
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Fancy1.this, pairs);
+            startActivity(intent, options.toBundle());
+        }
+        else {
+            startActivity(intent);
+        }
+    }
+    public void OpenUserRcd(View view){
+        Intent intent = new Intent(getApplicationContext(),UserRecords.class);
+
+        Pair[] pairs = new Pair[1];
+
+        pairs[0] = new Pair<View, String>(findViewById(R.id.UserRecord_btn),"transition_login");
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Fancy1.this, pairs);

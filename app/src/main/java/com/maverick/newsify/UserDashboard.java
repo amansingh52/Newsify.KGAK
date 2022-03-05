@@ -4,7 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -140,5 +144,50 @@ public class UserDashboard extends AppCompatActivity implements CategoryRVAdapte
         String query = categoryRVModalArrayList.get(position).getCategory();
         getNews(query);
     }
+    public void Home_btn(View view){
+        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+
+        Pair[] pairs = new Pair[1];
+
+        pairs[0] = new Pair<View, String>(findViewById(R.id.login_btn),"transition_login");
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(UserDashboard.this, pairs);
+            startActivity(intent, options.toBundle());
+        }
+        else {
+            startActivity(intent);
+        }
+    }
+    public void OpenAna(View view){
+        Intent intent = new Intent(getApplicationContext(),Analytics.class);
+
+        Pair[] pairs = new Pair[1];
+
+        pairs[0] = new Pair<View, String>(findViewById(R.id.OpenAna_btn),"transition_login");
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(UserDashboard.this, pairs);
+            startActivity(intent, options.toBundle());
+        }
+        else {
+            startActivity(intent);
+        }
+    }
+//    public void OpenFancy(View view){
+//        Intent intent = new Intent(getApplicationContext(),Fancy1.class);
+//
+//        Pair[] pairs = new Pair[1];
+//
+//        pairs[0] = new Pair<View, String>(findViewById(R.id.Report_btn),"transition_login");
+//
+//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(UserDashboard.this, pairs);
+//            startActivity(intent, options.toBundle());
+//        }
+//        else {
+//            startActivity(intent);
+//        }
+//    }
 }
 

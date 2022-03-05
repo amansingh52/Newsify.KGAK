@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Newsify"
         tools:replace="android:label">
         <activity
+            android:name=".UserRecords"
+            android:exported="false" />
+        <activity
             android:name=".ReportNews"
             android:exported="false" />
         <activity
@@ -32,7 +35,7 @@
         <activity android:name=".SignUp2ndClass" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />
-        <activity android:name=".Fancy1" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".NewDetailActivity" />
         <activity
             android:name=".UserDashboard"

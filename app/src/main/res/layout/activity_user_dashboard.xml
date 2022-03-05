@@ -12,9 +12,38 @@
 
     //newsify heading
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/OpenAna_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:backgroundTint="@color/m_yellow"
+            android:onClick="Home"
+            android:padding="15dp"
+            android:text="View"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:transitionName="transition_login" />
+        />
+
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:src="@drawable/ic_home" />-->
+
 
         <TextView
             android:id="@+id/app_name"
@@ -22,8 +51,9 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:elevation="8dp"
-            android:fontFamily="@font/poppins_semibold"
+            android:fontFamily="@font/montserrat_subrayada_bold"
             android:text="Newsify"
+            android:textColor="@color/black"
             android:textSize="15sp" />
 
         <TextView
@@ -53,9 +83,9 @@
             <RelativeLayout
                 android:id="@+id/upper"
                 android:layout_width="match_parent"
-                android:layout_height="320dp"
+                android:layout_height="300dp"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/white">
 
                 //feature location
@@ -67,7 +97,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="5dp"
                     android:background="@color/gradient_white"
                     android:orientation="vertical">
 
@@ -76,16 +106,17 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="50dp"
-                        android:text="Feature Location"
+                        android:fontFamily="@font/montserrat_subrayada_bold"
+                        android:text="Feature \nCategories"
                         android:textAllCaps="true"
                         android:textColor="@color/black"
-                        android:textSize="20sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Get all the categories here "
+                        android:text="Get all the exclusive categories \nhere "
                         android:textSize="10sp" />
 
                     //feature location end
@@ -93,17 +124,15 @@
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/idRVCategories"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="216dp"
+                    android:layout_height="304dp"
+                    android:layout_marginLeft="0dp"
                     android:layout_marginTop="10dp"
-                    android:orientation="vertical"
-
-
-
                     android:layout_toRightOf="@+id/featured_background"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     tools:listitem="@layout/categories_rv_item" />
-
 
 
                 //upper box end
@@ -116,46 +145,27 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/upper">
 
-            //lower box inner<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            //lower box inner
 
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            //most viewed<RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Most Viewed"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:textSize="10sp"
-                android:text="View All" />
-
-            //most viewed end</RelativeLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/idRVNews"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/idRVCategories"
-                android:layout_marginTop="10dp"
-                android:background="@color/m_yellow"
+                android:layout_height="wrap_content"
+
                 android:orientation="vertical"
-                tools:listitem="@layout/news_rv_item" />
-            //lower box inner end</LinearLayout>
+                android:padding="5dp">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/idRVNews"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/idRVCategories"
+
+                    android:background="@color/m_yellow"
+                    android:orientation="vertical"
+                    tools:listitem="@layout/news_rv_item" />
+                //lower box inner end
+            </LinearLayout>
             //center box end</RelativeLayout>
 
 

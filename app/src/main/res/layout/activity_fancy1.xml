@@ -46,11 +46,11 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="200dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="170dp"
+                android:layout_height="190dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
@@ -67,58 +67,7 @@
                     android:textSize="15sp" />
 
                 <Button
-                    android:id="@+id/login_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:background="#00000000"
-                    android:backgroundTint="@color/m_yellow"
-                    android:onClick="OpenRepoNews"
-                    android:padding="15dp"
-                    android:text="View"
-                    android:textColor="@color/white"
-                    android:transitionName="transition_login" />
-                />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="-7dp"
-                android:src="@drawable/ic_technology" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="140dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/m_voilet">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/montserrat_subrayada_bold"
-                    android:padding="15dp"
-                    android:text="API Request usage"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:id="@+id/Reportnews_btn"
+                    android:id="@+id/OpenAna_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -131,134 +80,10 @@
                     android:padding="15dp"
                     android:text="View"
                     android:textColor="@color/white"
+                    android:textSize="10sp"
                     android:transitionName="transition_login" />
                 />
 
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/ic_health" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/m_blue">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="15dp"
-                    android:text="Sports"
-                    android:textColor="@color/white"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="15dp"
-                    android:text="Expand all" />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_sports" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="@color/m_oragnge">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="15dp"
-                    android:text="Business"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="15dp"
-                    android:text="Expand all" />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"
-
-                android:src="@drawable/ic_business" />
-        </RelativeLayout>
-
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/m_yellow">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="15dp"
-                    android:text="Technology"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="15dp"
-                    android:text="Expand all" />
 
             </RelativeLayout>
 
@@ -266,45 +91,54 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
 
-                android:layout_marginRight="-7dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_technology"
-                />
+
+                android:src="@drawable/ic_analyticss" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="200dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_voilet">
+
+                <Button
+                    android:id="@+id/RepoNews_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:backgroundTint="@color/m_yellow"
+                    android:onClick="OpenRepoNews"
+                    android:padding="15dp"
+                    android:text="View"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:transitionName="transition_login" />
+                />
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:fontFamily="@font/montserrat_subrayada_bold"
                     android:padding="15dp"
-                    android:text="Health"
+                    android:text="API Request usage"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="15dp"
-                    android:text="Expand all"
-                    android:textColor="@color/black" />
 
             </RelativeLayout>
 
@@ -313,95 +147,59 @@
                 android:layout_height="80dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="15dp"
-                android:src="@drawable/ic_health" />
+                android:src="@drawable/ic_api" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="200dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/m_blue">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:fontFamily="@font/montserrat_subrayada_bold"
                     android:padding="15dp"
-                    android:text="Sports"
+                    android:text="User's Record"
                     android:textColor="@color/white"
                     android:textSize="15sp" />
 
                 <Button
+                    android:id="@+id/UserRecord_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
                     android:background="#00000000"
-
-
+                    android:backgroundTint="@color/m_yellow"
+                    android:onClick="OpenUserRcd"
                     android:padding="15dp"
-                    android:text="Expand all" />
+                    android:text="View"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:transitionName="transition_login" />
+                />
 
             </RelativeLayout>
 
             <ImageView
-                android:layout_width="75dp"
-                android:layout_height="80dp"
+                android:layout_width="85dp"
+                android:layout_height="90dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_sports" />
+                android:layout_marginTop="-2dp"
+                android:layout_marginRight="-8dp"
+                android:src="@drawable/ic_report" />
         </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="150dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="20dp"
-                android:background="@color/m_oragnge">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:padding="15dp"
-                    android:text="Business"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:background="#00000000"
-                    android:padding="15dp"
-                    android:text="Expand all" />
-
-            </RelativeLayout>
-
-            <ImageView
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"
-
-                android:src="@drawable/ic_business" />
-        </RelativeLayout>
-
 
 
     </LinearLayout>
