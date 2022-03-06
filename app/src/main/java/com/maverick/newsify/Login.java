@@ -21,20 +21,7 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
     public void MainActivity(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-
-        Pair[] pairs = new Pair[1];
-
-        pairs[0] = new Pair<View, String>(findViewById(R.id.login_btn),"transition_login");
-
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Login.this, pairs);
-            startActivity(intent, options.toBundle());
-        }
-        else {
-
-            startActivity(intent);
-        }
+        startActivity(new Intent(getApplicationContext(),Home.class));
     }
     public void SignUp(View view){
         Intent intent = new Intent(getApplicationContext(),SignUp.class);

@@ -17,14 +17,7 @@ public class Fancy1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fancy1);
-//        button =findViewById(R.id.login_btn);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(Fancy1.this,Web_view.class);
-//                startActivity(intent);
-//            }
-//        });
+
 //
     }
     public void OpenAna(View view){

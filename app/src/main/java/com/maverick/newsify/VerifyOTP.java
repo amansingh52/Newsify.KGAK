@@ -116,7 +116,7 @@ public class VerifyOTP extends AppCompatActivity {
             String code = pinFromUser.getText().toString();
             if (!code.isEmpty()) {
                 verifyCode(code);
-                Intent intent = new Intent(getApplicationContext(), UserDashboard.class);
+                Intent intent = new Intent(getApplicationContext(), Home.class);
                 Pair[] pairs = new Pair[1];
 
                 pairs[0] = new Pair<View, String>(findViewById(R.id.main), "transition_signup");
