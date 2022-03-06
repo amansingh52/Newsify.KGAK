@@ -21,19 +21,19 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
     }
-    public void MainActivity(View view){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-
-        Pair[] pairs = new Pair[1];
-
-        pairs[0] = new Pair<View, String>(findViewById(R.id.home_btn),"transition_login");
-
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Home.this, pairs);
-            startActivity(intent, options.toBundle());
-        }
-        else {
-            startActivity(intent);
-        }
-    }
+//    public void MainActivity(View view){
+//        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+//
+//        Pair[] pairs = new Pair[1];
+//
+//        pairs[0] = new Pair<View, String>(findViewById(R.id.home_btn),"transition_login");
+//
+//        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(Home.this, pairs);
+//            startActivity(intent, options.toBundle());
+//        }
+//        else {
+//            startActivity(intent);
+//        }
+//    }
 }

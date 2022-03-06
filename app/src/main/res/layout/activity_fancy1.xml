@@ -82,7 +82,7 @@
                     android:textColor="@color/white"
                     android:textSize="10sp"
                     android:transitionName="transition_login" />
-                />
+
 
 
             </RelativeLayout>

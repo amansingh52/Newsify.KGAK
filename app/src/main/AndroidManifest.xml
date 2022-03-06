@@ -25,7 +25,7 @@
         <!-- android:name=".CategoryCards" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".Home"
+            android:name=".StartupScreen"
             android:exported="false" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".MakeSelection" />
@@ -38,7 +38,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".NewDetailActivity" />
         <activity
-            android:name=".UserDashboard"
+            android:name=".Home"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
